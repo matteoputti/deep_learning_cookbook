@@ -20,6 +20,7 @@ source venv3/bin/activate
 if Windows
 python -m venv venv3
 venv3\Scripts\activate.bat
+remember to install MSVC compiler 2019
 
 pip install -r requirements.txt
 jupyter notebook
