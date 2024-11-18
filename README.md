@@ -11,7 +11,7 @@ but on a mere CPU things will take quite a while.
 ## Compiler used in this release
 MSVC 2022 17.12 V143
 
-## Operating Systen of host used in this release
+## Operating System of host used in this release
 Windows 11
 
 ## Getting started
