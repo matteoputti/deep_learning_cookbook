@@ -5,6 +5,15 @@ machine learning techniques in Keras. The notebooks accompany the book
 [Deep Learning Cookbook](https://www.amazon.com/Deep-Learning-Cookbook-Practical-Recipes) but work well on their own. A GPU is not required to run them,
 but on a mere CPU things will take quite a while.
 
+## Python3 version used in this release
+3.9.11
+
+## Compiler used in this release
+MSVC 2022 17.12 V143
+
+## Operating Systen of host used in this release
+Windows 11
+
 ## Getting started
 
 To get started, setup a virtual env, install the requirements and start the notebook server:
@@ -12,17 +21,22 @@ To get started, setup a virtual env, install the requirements and start the note
 ```Bash
 git clone https://github.com/matteoputti/deep_learning_cookbook.git
 cd deep_learning_cookbook
+
 if *NIX
 
 python3 -m venv venv3
 source venv3/bin/activate
+pip install -r requirements-unix.txt
 
 if Windows
+
+remember to install MSVC compiler, latest version available and with python support
+
 python -m venv venv3
 venv3\Scripts\activate.bat
-remember to install MSVC compiler 2019
+pip install -r requirements-windows.txt
 
-pip install -r requirements.txt
+all os
 jupyter notebook
 ```
 
