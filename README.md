@@ -42,7 +42,7 @@ jupyter notebook
 
 ## The notebooks reviewed
 
-#### [03.1 Using pre trained word embeddings](https://github.com/matteoputti/deep_learning_cookbook/blob/master/notebooks_rewiewed/most%20similar%20words.ipynb)
+#### [03.1 Using pre trained word embeddings](https://github.com/matteoputti/deep_learning_cookbook/blob/master/notebooks_reviewed/most%20similar%20words.ipynb)
 
 In this notebook, we'll use a pretrained word embedding model (Word2Vec) to explore how word embeddings allow us
 to explore similarities between words and relationships between words. For example, find the capital of a country
