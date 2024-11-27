@@ -40,7 +40,110 @@ all os
 jupyter notebook
 ```
 
-## The notebooks
+## The notebooks reviewed
+
+#### [03.1 Using pre trained word embeddings](https://github.com/matteoputti/deep_learning_cookbook/blob/master/notebooks_rewiewed/most%20similar%20words.ipynb)
+
+In this notebook, we'll use a pretrained word embedding model (Word2Vec) to explore how word embeddings allow us
+to explore similarities between words and relationships between words. For example, find the capital of a country
+or the main products of a company. We'll finish with a demonstration of using t-SNE to plot high dimensional
+spaces on a 2D graph. 
+
+#### [03.2 Domain specific ranking using word2vec cosine distance] WORK IN PROGRESS
+
+Building on the previous recipe, we'll use the distances between the words to do domain specific rankings. Specifically
+we'll look at countries. First we create a small classifier to find all countries in the set of words, based on a small
+sample. We'll then use a similar approach to show relevance for specific words for countries. For example, since
+cricket is closer to India than to Germany, cricket is probably more relevant. We can plot this on a world map which
+lights up countries based on their relevance for specific words.
+
+#### [04.1 Collect movie data from Wikipedia] WORK IN PROGRESS
+
+This notebook shows how to download a dump of the Wikipedia and parse it to extract structured data by using the
+category and template information. We'll use this to create a set of movies including rating data.
+
+#### [04.2 Build a recommender system based on outgoing Wikipedia links] WORK IN PROGRESS
+
+Based on the structured data extracted in the previous notebook, we'll train a network that learns to predict a movie
+based on the outgoing links on the corresponding Wikipedia page. This creates embeddings for the movies. This in
+turn lets us recommend movies based on other movies - similar movies are next to each other in the embedding
+space.
+
+#### [05.1 Generating Text in the Style of an Example Text] WORK IN PROGRESS
+We train an LSTM to write Shakespeare. We'll follow this up with one that generates Python code by training a similar
+LSTM on the Python system codebase. Visualizing what the network has learned shows us what the Python producing
+network is paying attention to as it produces or read Python code.
+
+#### [06.1 Question matching] WORK IN PROGRESS
+
+In this notebook we train a network to learn how to match questions and answers from stackoverflow; this sort of indexing
+than allows us to find given a question what the most likely answer in a database is. We try a variety of approaches to
+improve upon the first not terribly great results.
+
+#### [07.1 Text Classification] WORK IN PROGRESS
+
+This notebook shows eight different machine learning approaches to classify texts into a variety of sentiments. The first
+three are classical learners, followed by a number of deep learning models, character or word based and lstm vs cnn. The
+best approach is to combine all approaches in one model.
+
+#### [07.2 Emoji Suggestions] WORK IN PROGRESS
+
+We start by harvesting a large set of tweets and we keep the ones that contain exactly one emoji (you can skip this step,
+a training set is included). We then train a number of deep models to use the tweet minus the emoji to predict the missing
+emoji. We end up effectively with a model that can find the best emoji for a given bit of text.
+
+#### [07.3 Tweet Embeddings] WORK IN PROGRESS
+
+Some experimental code (not included in the book) to semantically index tweets such that tweets that are similar show
+up next to each other; effectively doing what Word2Vec does for words, but now for tweets.
+
+#### [08.1 Sequence to sequence mapping] WORK IN PROGRESS
+#### [08.2 Import Gutenberg] WORK IN PROGRESS
+
+Small notebook demonstrating how to download books from the Gutenberg project. Tokenizes a set of book in preparation of
+the subword tokenizing in the next notebook.
+
+#### [09.1 Reusing a pretrained image recognition network] WORK IN PROGRESS
+
+Quick notebook demonstrating how to load a pretrained network and apply it on an image of, well, what else? a cat.
+Shows how to normalize the image and decode the predictions.
+
+#### [09.2 Images as embeddings] WORK IN PROGRESS
+
+In this notebook we use the Flickr API to fetch a feed of search results for the search term cat. By running each result through a pre-trained network
+we get vectors that project the images in a 'space'. The center of that space in some way represents the most cat image possible. By reranking on
+distance to that center we can weed out images that are less cat like. Effectively we can improve upon the Flickr search results without
+knowing the content!
+
+#### [09.3 Retraining] WORK IN PROGRESS
+#### [10.1 Building an inverse image search service] WORK IN PROGRESS
+#### [11.1 Detecting Multiple Images] WORK IN PROGRESS
+
+Use the fact that imag classification networks extract features per larger square sub-image to detect multiple dogs and cats in the same
+image or at least to know where in the image you can find your cat or dog. The approach her is a lot simpler than what is the state of the
+art, but also a lot easier to follow, so a good way to get started.
+
+#### [12.1 Activation Optimization]WORK IN PROGRESS
+#### [12.2 Neural Style]WORK IN PROGRESS
+#### [13.1 Quick Draw Cat Autoencoder]WORK IN PROGRESS
+#### [13.2 Variational Autoencoder]WORK IN PROGRESS
+#### [13.5 Quick Draw Autoencoder] WORK IN PROGRESS
+#### [14.1 Importing icons] WORK IN PROGRESS
+#### [14.2 Icon Autoencoding] WORK IN PROGRESS
+#### [14.2 Variational Autoencoder Icons] WORK IN PROGRESS
+#### [14.3 Icon GAN] WORK IN PROGRESS
+#### [14.4 Icon RNN] WORK IN PROGRESS
+#### [15.1 Song Classification] WORK IN PROGRESS
+#### [15.2 Index Local MP3s] WORK IN PROGRESS
+#### [15.4 Train a music recommender] WORK IN PROGRESS
+#### [16.1 Productionize Embeddings] WORK IN PROGRESS
+#### [16.2 Prepare Keras model for Tensorflow Serving] WORK IN PROGRESS
+#### [16.3 Prepare model for iOS] WORK IN PROGRESS
+#### [16.4 Simple Text Generation] WORK IN PROGRESS
+#### [Simple Seq2Seq] WORK IN PROGRESS
+Simple sequence-to-sequence mapping demo. The notebook shows how to teach a network how to form plurals.
+
+## The  original notebooks
 
 #### [03.1 Using pre trained word embeddings](https://github.com/matteoputti/deep_learning_cookbook/blob/master/03.1%20Using%20pre%20trained%20word%20embeddings.ipynb)
 
