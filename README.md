@@ -145,7 +145,7 @@ Simple sequence-to-sequence mapping demo. The notebook shows how to teach a netw
 
 ## The  original notebooks
 
-#### [03.1 Using pre trained word embeddings](https://github.com/matteoputti/deep_learning_cookbook/blob/master/03.1%20Using%20pre%20trained%20word%20embeddings.ipynb)
+#### [03.1 Using pre trained word embeddings](https://github.com/matteoputti/deep_learning_cookbook/blob/master/notebooks_reviewed/most%20similar%20words.ipynb)
 
 In this notebook, we'll use a pretrained word embedding model (Word2Vec) to explore how word embeddings allow us
 to explore similarities between words and relationships between words. For example, find the capital of a country
